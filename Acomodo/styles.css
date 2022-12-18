@@ -13,11 +13,17 @@
     font-family: 'Quicksand', sans-serif;
     
   }
-  body > *:not(.centro) {
+  /* campo de prueba xd */
+
+  .background-blur{
     filter: blur(3px);
   }
-  .blur{
-    backdrop-filter: blur(80px);
+
+  .prueba{
+    cursor: pointer;
+  }
+  .cursor{
+    cursor: pointer;
   }
   .inactive{
     display: none;
@@ -333,15 +339,13 @@
   width: 360px;
   padding-bottom: 24px;
   background-color: var(--white);
-  box-shadow: 0px 5px 5px #EBE8E8;
-  /* position: absolute; */
+  box-shadow: 0px 10px 40px #6D6A6A;
   right: 0;
 }
 .product-description-close {
   background: var(--white);
   width: 14px;
-  height: 14px;
-/*   position: absolute;*/  
+  height: 14px; 
   top: 24px;
   left: 24px;
   z-index: 2;
