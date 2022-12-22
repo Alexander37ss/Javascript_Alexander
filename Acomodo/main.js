@@ -64,6 +64,7 @@ function MaquetaProductos(arreglo){
           const ProductImage = document.createElement('img');
           ProductImage.setAttribute('src', product.image);
           ProductImage.setAttribute('class', 'prueba');
+          ProductImage.addEventListener('click', removeDetailProduct);
      
           const ProductInfo = document.createElement('div');
           ProductInfo.classList.add('product-info');
@@ -109,6 +110,10 @@ ProductClose.addEventListener('click', addDetailProduct);
 function removeDetailProduct(){
      ProductDetail.classList.remove('inactive');
      background.classList.add('background-blur');
+     DesktopCar.classList.add('inactive');
+     DesktopMenu.classList.add('inactive');
+     MobileMenu.classList.add('inactive');
+     DesktopMenu.classList.add('inactive');
 }
 function addDetailProduct(){
      ProductDetail.classList.add('inactive');
